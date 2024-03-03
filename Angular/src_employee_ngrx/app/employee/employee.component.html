@@ -1,0 +1,33 @@
+<p>employee works!</p>
+
+
+    <form  (submit)="addEmployee()">
+    
+    <input type="text" placeholder="Add New Id" class="form-control" name="employeeid"  [(ngModel)]="employeeid">
+    
+    <input type="text" placeholder="Add New Name" class="form-control" name="employeeName"  [(ngModel)]="employeeName"> 
+
+    <input type="text" placeholder="Add New Email" class="form-control" name="employeeEmail"  [(ngModel)]="employeeEmail"> 
+
+
+    <button type="submit" class="btn btn-success">Add</button>
+    <button type="submit" class="btn btn-primary" (click)="updateEmployee()">Update Existing Entries</button>
+</form>
+    
+
+
+
+
+<button (click)="toggleList()">Show Employees</button>
+
+
+<ul *ngIf="showList">
+    <li *ngFor="let employee of employeesList; let i = index">
+      {{ employee.id }} - {{ employee.name }} - {{ employee.email }}
+      <button class="btn btn-danger" (click)="removeEmployee(employee.id)">Delete</button>
+    </li>
+
+</ul>
+    
+    
+
