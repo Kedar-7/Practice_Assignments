@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="container">
+        <div class="outer">
+        <div class="card">
+            <div class="title">
+                <h3>Registration Form</h3>
+            </div>
+        <div class="rform">
+            <form>
+                <div class="div1">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your name.." class="ifields"> <br>
+                
+                    <label for="lname">Email</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Email.." class="ifields"><br>
+                </div>
+                <div class="div2">
+                    <div class="num">
+                        <label for="num">Mobile Number</label><br>
+                        <input type="text" id="num" name="lastname" placeholder="Enter mobile number">
+                    </div>
+                    <div class="date">
+                        <label for="date" id="date" name="date">Birth Date</label><br>
+                        <input type="date" id="date" name="date"><br>
+                    </div>
+                </div>
+                <div class="div3">
+                    <label for="state">Gender: </label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" >
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" >
+                    <label for="other">Prefer not to say</label><br>
+                </div>
+
+                <div class="div4">
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address" placeholder="Enter Address" class="ifields"><br>
+                    <div class="div5">
+                        <label for="country" placeholder="Country">Country</label>
+                        <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="china">China</option>
+                        </select>
+                    
+
+                        
+                        <input type="text" id="code" name="code" placeholder="Enter postal code"><br>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+        </div>
+
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>

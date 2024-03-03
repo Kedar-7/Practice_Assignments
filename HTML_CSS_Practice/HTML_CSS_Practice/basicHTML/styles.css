@@ -1,0 +1,14 @@
+
+.container{
+    width: 100vw;
+    height: 100vw;
+    
+    border: 2px solid black;
+    color: black;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
